@@ -5,23 +5,31 @@ import { Navigate } from "react-router-dom";
 import { useRef, useState } from "react";
 import Menu from "../items/Menu";
 
-const useAuth = () => {
-  const user =  {loggedIn: true}
-  return user && user.loggedIn;
-}
-
+// const useAuth = () => {
+//   const user =  {loggedIn: true}
+//   return user && user.loggedIn;
+// }
+{/* <Navigate to="/login"/> */}
 export default function Main({}){
-  const isAuth = useAuth();
+//   const isAuth = useAuth();
   const [menuShow,setMenuShow] = useState(false);
   function handelMenu(){
     setMenuShow(prev => !prev)
   }
-  return( isAuth ?
+//   return( isAuth ?
+//     <>
+//     <Header />
+//       <Outlet/>
+//       <Menu show={menuShow}/>
+//     <Footer onMenuClick={handelMenu}/>
+//     </> : <Navigate to="/login"/>
+//   );
+  return(
     <>
     <Header />
-      <Outlet/>
+      <Outlet />
       <Menu show={menuShow}/>
     <Footer onMenuClick={handelMenu}/>
-    </> : <Navigate to="/login"/>
+    </>
   );
 }

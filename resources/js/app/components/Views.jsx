@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 //importing pages
 import LogIn from "./Pages/LogIn";
@@ -12,14 +13,15 @@ import Mail from "./Pages/Mail";
 
 // import ProtectedRoutes from "./ProtectedRoutes";
 
-export default function Views(){
+export default function Views({user}){
+
     return (
         <Routes>
             <Route index path="/sign-up" element={<SignUp />}/>
             <Route path="/login" element={<LogIn />}/>
             <Route element={<Main />}> {/*header and footer of all pages*/}
                 <Route index path="/" element={<Home />}/>
-                <Route path="/products" element={<Products />}/>
+                <Route path="/products" element={<Products userLog={user}/>}/>
                 <Route path="/profile" element={<Profile />}/>
                 <Route path="/mail" element={<Mail />}/>
             </Route>

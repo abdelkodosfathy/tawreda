@@ -1,16 +1,20 @@
 import Product from "../items/Product";
+import { Navigate } from "react-router-dom";
+
 let arr = [1,true,false];
-export default function Products() {
-  return(
-    <>
-      <section id="Products">
-      <div className="products-slider">
-        {arr.map((e, index) =>{
-          return <Product key={index}/>;
-        })}
-      </div>
-      </section>
-    </>
+export default function Products({userLog}) {
+    // {user ? <Route path="/products" element={<Products />}/> : <Navigate to="/login"/>}
+
+  return(userLog ? <>
+    <section id="Products">
+    <div className="products-slider">
+      {arr.map((e, index) =>{
+        return <Product key={index}/>;
+      })}
+    </div>
+    </section>
+    </> : <Navigate to="/login"/>
+
   );
 }
 // import { useState, useEffect } from 'react';

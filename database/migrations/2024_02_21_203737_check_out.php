@@ -21,7 +21,8 @@ return new class extends Migration {
 
             $table->unsignedBigInteger('shipping_id');
             $table->foreign('shipping_id')->references('shipping_id')->on('shipping')->onDelete('cascade');
-
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

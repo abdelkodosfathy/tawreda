@@ -17,6 +17,8 @@ return new class extends Migration {
             $table->unsignedBigInteger('cust_id');
             $table->foreign('cust_id')->references('cust_id')->on('customer')->onDelete('cascade');
             $table->decimal('total');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

@@ -25,6 +25,8 @@ return new class extends Migration {
             $table->unsignedBigInteger('dis_id');
             $table->foreign('dis_id')->references('dis_id')->on('discount')->onDelete('cascade');
             $table->boolean('product_cert');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
 
         });
     }

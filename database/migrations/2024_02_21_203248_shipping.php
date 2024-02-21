@@ -21,6 +21,8 @@ return new class extends Migration {
             $table->text('address');
             $table->integer('postal_code');
             $table->string('phone');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
 
         });
     }

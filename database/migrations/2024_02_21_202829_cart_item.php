@@ -19,6 +19,8 @@ return new class extends Migration {
             $table->unsignedBigInteger('product_id');
             $table->foreign('product_id')->references('product_id')->on('product')->onDelete('cascade');
             $table->integer('quantity');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
 
         });
     }

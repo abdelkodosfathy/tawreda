@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { Navigate } from "react-router-dom";
 
 //importing pages
 import LogIn from "./Pages/LogIn";
@@ -10,6 +9,7 @@ import Home from "./Pages/Home";
 import Products from "./Pages/Products";
 import Profile from "./Pages/Profile";
 import Mail from "./Pages/Mail";
+import Cart from "./Pages/Cart";
 
 // import ProtectedRoutes from "./ProtectedRoutes";
 
@@ -22,6 +22,7 @@ export default function Views({user}){
             <Route element={<Main />}> {/*header and footer of all pages*/}
                 <Route index path="/" element={<Home />}/>
                 <Route path="/products" element={<Products userLog={user}/>}/>
+                <Route path="/cart" element={<Cart userLog={user}/>}/>
                 <Route path="/profile" element={<Profile />}/>
                 <Route path="/mail" element={<Mail />}/>
             </Route>

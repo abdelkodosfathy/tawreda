@@ -1,0 +1,34 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-f8ec8311.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-f8ec8311.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/plumbing-tools-and-equipment-overhead-view-KWXK75-7bed8b4d.jpg",
+      "assets/360_F_527262768_QI9H8hnoDij6bSPv1iQHQgcgu43rVTyV-2173da7e.jpg"
+    ],
+    "css": [
+      "assets/app-f8ec8311.css"
+    ],
+    "file": "assets/app-909942fd.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/app/Images/360_F_527262768_QI9H8hnoDij6bSPv1iQHQgcgu43rVTyV.jpg": {
+    "file": "assets/360_F_527262768_QI9H8hnoDij6bSPv1iQHQgcgu43rVTyV-2173da7e.jpg",
+    "src": "resources/js/app/Images/360_F_527262768_QI9H8hnoDij6bSPv1iQHQgcgu43rVTyV.jpg"
+  },
+  "resources/js/app/Images/plumbing-tools-and-equipment-overhead-view-KWXK75.jpg": {
+    "file": "assets/plumbing-tools-and-equipment-overhead-view-KWXK75-7bed8b4d.jpg",
+    "src": "resources/js/app/Images/plumbing-tools-and-equipment-overhead-view-KWXK75.jpg"
+  },
+  "resources/js/app/Images/أدوات السباكة في المنزل.jpg": {
+    "file": "assets/أدوات السباكة في المنزل-0b5b17c8.jpg",
+    "src": "resources/js/app/Images/أدوات السباكة في المنزل.jpg"
+  }
+}

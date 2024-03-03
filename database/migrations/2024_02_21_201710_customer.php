@@ -15,8 +15,9 @@ return new class extends Migration {
         Schema::create('customer', function (Blueprint $table) {
             $table->bigIncrements('cust_id');
             $table->string('cust_name');
-            $table->tinyInteger('telephone');
+            $table->string('telephone');
             $table->string('password');
+            $table->string('api_token')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
         });

@@ -6,10 +6,10 @@ export default function SignUp () {
       <div className="sign-up-icon">
           <i className="fa-solid fa-user"></i>
       </div>
-      <form action="#" method="POST">
-        <input type="text" placeholder="Enter your name" required/>
-        <input type="text" placeholder="Enter your phone number" required/>
-        <input type="text" placeholder="Enter your password" required/>
+      <form action="http://127.0.0.1:8000/api/addnew" method="POST">
+        <input type="text" name="cust_name" placeholder="Enter your name" required/>
+        <input type="text" name="telephone" placeholder="Enter your phone number" required/>
+        <input type="text" name="password" placeholder="Enter your password" required/>
         <input type="text" placeholder="Confirm your password" required/>
         <div className="row">
           <Link to="/login">

@@ -14,10 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa:wght@200..800&display=swap" rel="stylesheet">
-
-    <title>Hello</title>
+    
+    <title>Home</title>
 </head>
 <body>
+  
    <div id="root">
 
     </div>

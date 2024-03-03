@@ -27,13 +27,13 @@ class BrandStoreRequest extends FormRequest
             return [
                 'brand_name' => 'required|string|max:258',
                 'brand_desc' => 'required|string',
-                'img' => 'required|image|mimes:png,jpg,jpeg|max:2048',
+                'img' => 'image|mimes:png,jpg,jpeg|max:2048',
             ];
         } else {
             return [
                 'brand_name' => 'required|string|max:258',
                 'brand_desc' => 'required|string',
-                'img' => 'required|image|mimes:png,jpg,jpeg|max:2048',
+                'img' => 'image|mimes:png,jpg,jpeg|max:2048',
             ];
         }
     }
@@ -44,13 +44,13 @@ class BrandStoreRequest extends FormRequest
             return [
                 'brand_name' => 'required|string|max:258',
                 'brand_desc' => 'required|string',
-                'img' => 'required|image|mimes:png,jpg,jpeg|max:2048',
+                'img' => 'image|mimes:png,jpg,jpeg|max:2048',
             ];
         } else {
             return [
                 'brand_name' => 'required|string|max:258',
                 'brand_desc' => 'required|string',
-                'img' => 'required|image|mimes:png,jpg,jpeg|max:2048',
+                'img' => 'image|mimes:png,jpg,jpeg|max:2048',
 
             ];
         }

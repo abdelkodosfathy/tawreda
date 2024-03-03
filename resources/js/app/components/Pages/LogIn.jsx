@@ -1,5 +1,17 @@
-import { Link } from "react-router-dom";
-export default function LogIn (){
+import { Link ,useNavigate} from "react-router-dom";
+import useAuthContext from "../../../../context/AuthContext";
+import { useState } from "react";
+ const LogIn =()=>{
+
+const [telephone , setTelephone] =useState("");
+const [password , setPassword] =useState("");
+const { login , errors }=useAuthContext();
+
+const handleLogin=async(event)=>{
+  event.preventDefault();
+  login({telephone ,password});
+  
+};
   return(
     <>
     <section id="Login">
@@ -7,9 +19,9 @@ export default function LogIn (){
       <div className="profile-icon">
         <i className="fa-solid fa-user"></i>
       </div>
-      <form action="#" method="POST">
-        <input type="text" placeholder="Enter your phone number" required/>
-        <input type="text" placeholder="Enter your password" required/>
+      <form onSubmit={handleLogin} >
+        <input type="text" value={telephone} onChange={(e)=>setTelephone(e.target.value)} placeholder="Enter your phone number" required/>
+        <input type="text" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter your password" required/>
         <div className="row">
           <Link to="/sign-up">
           <button id="signup-btn">Sign up</button>
@@ -21,3 +33,4 @@ export default function LogIn (){
     </>
   );
 }
+export default LogIn ;
